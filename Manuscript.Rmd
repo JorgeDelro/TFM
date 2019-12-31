@@ -1,0 +1,26 @@
+---
+title: "Manuscript"
+output: html_document
+---
+
+# Vector autoregression
+
+Following the notation of Tsay (2014) a multivariate time series $z_t$ follows a VAR model of order *p*, VAR(*p*), if
+
+$$
+\normalsize 
+\begin{aligned}
+z_t = \phi_0 + \sum_{i=1}^{p} \phi_i z_{t-1} + a_t
+\end{aligned}
+$$
+where $\phi_0$ is a k-dimensional constant vector and $\phi_i$ are k x k matrices for *i* > 0, $\phi_p$ $\neq$ **0**, and $a_t$ is a sequence of independent and identically distributed (iid) random vectors with mean zero and covariance matrix $\Sigma_a$, which is positive-definitive.
+
+### Stationarity condition
+A (weakly) stationary time series $z_t$ has time invariant mean and covariance matrix. The eigenvalues of $\phi_1$ determine the stationarity of $z_t$, not he individual elements of $\phi_1$
+
+```{r }
+
+```
+
+## Simulation design
+
